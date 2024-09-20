@@ -1,1 +1,51 @@
 <!-- Start! -->
+<!DOCTYPE html>
+ <html>
+ <head>
+    <title>Message</title>
+ </head>
+ <body>
+    <script>
+        // TODO: Add hello code
+        // function getMessage(name) {
+        //     return 'Hello, ' + name + '...';
+        // }
+        // const message = getMessage('Ornella');
+        // document.write(message);
+
+        // function displayDone() {
+        //     console.log('Done!');
+        // }
+
+        // setTimeout(displayDone, 3000);
+
+
+        // TODO: Add setTimeout code
+
+        let greet = 'Hello';
+        let name = 'Jane';
+        setTimeout (
+            () => {document.write(`${greet}, ${name}!`)},
+            2000
+        );
+
+        const intro = [
+            "안녕하세요!",
+            "저는 컴퓨터공학을 전공하고 있습니다.",
+            "기초웹개발론을 수강하고 있습니다.",
+            "실습을 통해 터미널에서 소개말을 출력하고 있습니다."
+        ];
+
+        let index = 0;
+
+        const updateIntro = () => {
+            console.log(intro[index]);
+            index = (index + 1) % intro.length; // 인덱스를 순환시킴
+        };
+
+        setInterval(updateIntro, 3000);
+        updateIntro();
+
+    </script>
+ </body>
+ </html>
