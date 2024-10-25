@@ -1,0 +1,81 @@
+/* style.css */
+
+/* 전체 페이지 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 제목 스타일 */
+h1 {
+    color: #333;
+}
+
+/* 인용문 스타일 */
+#quote {
+    font-size: 1.5em;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 80%;
+    text-align: center;
+}
+
+/* 메시지 스타일 */
+#message {
+    font-size: 1.2em;
+    color: green;
+    margin: 10px 0;
+}
+
+/* 입력 필드 스타일 */
+#typed-value {
+    font-size: 1.2em;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 버튼 호버 스타일 */
+button:hover {
+    background-color: #45a049;
+}
+
+/* 비활성화된 버튼 스타일 */
+button:disabled {
+    background-color: #8c9f8c;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* 강조된 단어 스타일 */
+.highlight {
+    background-color: yellow;
+}
+
+/* 오류 스타일 */
+.error {
+    background-color: lightcoral;
+    border: 2px solid red;
+}
