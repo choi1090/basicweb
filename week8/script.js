@@ -19,6 +19,7 @@ const buttonElement = document.getElementById('start');
 
 buttonElement.addEventListener('click', () => {
     buttonElement.disabled = true; // 버튼 비활성화
+    typedValueElement.disabled = false; // 입력 필드 활성화
 
     const quoteIndex = Math.floor(Math.random() * quotes.length); // 무작위 인덱스 생성
     const quote = quotes[quoteIndex]; // 무작위 인덱스 값으로 인용문 선택
@@ -41,6 +42,7 @@ typedValueElement.addEventListener('input', () => {
     const currentWord = words[wordIndex]; // 현재 타이핑할 단어를 currentWord에 저장
     const typedValue = typedValueElement.value; // 입력한 값을 typedValue에 저장
     document.getElementById('start').disabled = true; // **버튼 비활성화
+    typedValueElement.disabled = false; // 입력 필드 활성화
     if (typedValue === currentWord && wordIndex === words.length - 1) { // 마지막 단어까지 정확히 입력했는 지 체크
       const elapsedTime = new Date().getTime() - startTime; // 타이핑에 소요된 시간 계산
       const message = `CONGRATULATIONS! You finished in ${elapsedTime / 1000} seconds.` ;  // 타이핑 완료 메시지
