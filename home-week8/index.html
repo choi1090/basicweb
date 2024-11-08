@@ -1,0 +1,31 @@
+<!-- inside index.html -->
+<html>
+<head>
+  <title>Typing game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Typing game!</h1>
+  <p>Practice your typing skills with a quote from Sherlock Holmes. Click <i><b>Start</b></i> to begin!</p>
+  <p id="quote"></p>
+  <p id="message"></p>
+  <div id="input-area" class="parent">
+    <img id="cat" class="child" src="/home-week8/images/cat-0.png" alt="A cat that change according to input status" height="48" />
+    <input id="typed-value" class="child" type="text" aria-label="current word" />
+    <button id="start" class="child" type="button">Start</button>
+  </div>
+  <button type="button" id="show-scores">Show Top Scores</button>
+  <div id="score-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Top Scores</h2>
+      <img id="trophy" src="/home-week8/images/trophy.gif" alt="trophy" />
+      <ol id="top-scores">
+        <!-- 상위 3개의 점수 목록이 여기 채워질 예정 -->
+      </ol>
+      <p id="current-score"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
